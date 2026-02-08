@@ -1,0 +1,115 @@
+/* ---------- GLOBAL ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* ---------- JUMP MENU ---------- */
+#jumpMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100vh;
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+#jumpMenu a {
+    display: block;
+    color: #ddd;
+    margin: 8px 0;
+    text-decoration: none;
+}
+
+#jumpMenu a:hover {
+    color: white;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    position: fixed;
+    top: 0;
+    left: 15%;
+    width: 85%;
+    height: 80px;
+    background: #ffffff;
+    border-bottom: 1px solid #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    z-index: 1000;
+}
+
+header p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav button {
+    padding: 8px 12px;
+    border: none;
+    background: #0077cc;
+    color: white;
+    cursor: pointer;
+}
+
+header nav button:hover {
+    background: #005fa3;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+main {
+    margin-left: 15%;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* ---------- ARTICLES GRID ---------- */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+/* ---------- THANK YOU BLOCK ---------- */
+#thanks {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0077cc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #ddd;
+}
